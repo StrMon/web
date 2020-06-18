@@ -1,6 +1,7 @@
-<html>
-<body>
-Welcome <?php echo $_GET["name"]; ?><br>
-Your email address is: <?php echo $_GET["email"]; ?>
-</body>
-</html>
+  
+<?php
+  $say = htmlspecialchars($_POST['name']);
+  $to  = htmlspecialchars($_POST['email']);
+
+  echo  $say, ' ', $to;
+?>
